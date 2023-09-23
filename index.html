@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <title>Score Keeping App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="score2.avif" alt="">
+                        </figure>
+                    </div>
+                    
+                    <header class="card-header">
+                        <p class="card-header-title has-text-centered">Score Keeping App</p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content " >
+                            <h1 class=" heading is-size-1">
+                                <div class="columns is-mobile">
+                                    <div class="column is-half is-offset-one-quarter">
+                                        <span class="p1ScoreDisplay">0</span>
+                                        <span>-</span>
+                                        <span class="p2ScoreDisplay">0</span>
+                                    </div>
+                                </div>
+
+                            </h1>
+                            <p class="subtitle">Use the buttons below to keep score</p>
+                            <label for="winningScoreSelect" class="label is-large is-inline">What is your winning score?</label>
+                            <div  class="select is-rounded" >
+                                <select id="winningScoreSelect">
+                                    <option value="3">3</option>
+                                    <option value="5">5</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id = 'p1Button'class="button is-warning card-footer-item">+1 Player One</button>
+                        <button id="p2Button" class="button is-info card-footer-item">+1 Player Two</button>
+                        <button id="reset" class="button is-danger card-footer-item">Reset</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src ="App.js"></script>
+</body>
+</html>
